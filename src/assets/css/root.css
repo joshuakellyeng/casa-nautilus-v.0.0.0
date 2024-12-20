@@ -1201,8 +1201,12 @@ header .cs-button-solid {
 @media only screen and (min-width: 0em) {
   #footer {
     font-size: min(4vw, 1.2em);
-    padding: 0rem 0 1.25rem;
+    padding: 5.25rem 0 1.25rem;
     background: var(--primary);
+    .credit {
+    margin-top: 2rem;
+}
+
   }
   #footer .left-section {
     text-align: center;
