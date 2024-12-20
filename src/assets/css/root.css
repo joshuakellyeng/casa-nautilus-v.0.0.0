@@ -1203,9 +1203,7 @@ header .cs-button-solid {
     font-size: min(4vw, 1.2em);
     padding: 5.25rem 0 1.25rem;
     background: var(--primary);
-    .credit {
-    margin-top: 2rem;
-}
+    
 
   }
   #footer .left-section {
