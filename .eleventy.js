@@ -46,6 +46,18 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy("./src/assets/svgs");
     eleventyConfig.addPassthroughCopy("./src/assets/js");
 
+        // Collections for language-specific pages
+    eleventyConfig.addCollection("english", (collection) =>
+        collection.getFilteredByGlob("./src/content/pages/**/*.html").filter((page) => {
+            return !page.inputPath.includes("/es/");
+        })
+    );
+
+    eleventyConfig.addCollection("spanish", (collection) =>
+        collection.getFilteredByGlob("./src/content/pages/es/**/*.html")
+    );
+
+
     // Other required folders are passed through
     eleventyConfig.addPassthroughCopy("./src/admin");
     eleventyConfig.addPassthroughCopy("./src/_redirects");
