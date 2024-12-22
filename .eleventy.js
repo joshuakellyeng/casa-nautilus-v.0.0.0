@@ -47,14 +47,10 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy("./src/assets/js");
 
         // Collections for language-specific pages
-    eleventyConfig.addCollection("english", (collection) =>
-        collection.getFilteredByGlob("./src/content/pages/**/*.html").filter((page) => {
-            return !page.inputPath.includes("/es/");
-        })
-    );
+    module.exports = function (eleventyConfig) {
+  eleventyConfig.addPassthroughCopy("src/content/pages/es");
+};
 
-    eleventyConfig.addCollection("spanish", (collection) =>
-        collection.getFilteredByGlob("./src/content/pages/es/**/*.html")
     );
 
 
