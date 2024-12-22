@@ -46,10 +46,7 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy("./src/assets/svgs");
     eleventyConfig.addPassthroughCopy("./src/assets/js");
 
-        // Collections for language-specific pages
-    module.exports = function (eleventyConfig) {
-  eleventyConfig.addPassthroughCopy("src/content/pages/es");
-};
+ 
 
     );
 
